@@ -1,0 +1,15 @@
+.itemListContainer{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.itemsConatiner{
+    border:1px solid black;
+    width:50vw;
+}
+.itemConatiner{
+    display: flex;
+    flex-direction: row;
+    justify-content:space-between
+}

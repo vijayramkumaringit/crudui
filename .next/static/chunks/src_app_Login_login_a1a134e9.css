@@ -1,0 +1,19 @@
+/* [project]/src/app/Login/login.css [app-client] (css) */
+.loginFormContainer {
+  border: 1px solid #000;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+  display: flex;
+}
+
+.formButtonContainer {
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  display: flex;
+}
+
+
+/*# sourceMappingURL=src_app_Login_login_a1a134e9.css.map*/

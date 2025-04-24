@@ -1,0 +1,14 @@
+/* [project]/src/app/routes/register/register.css [app-client] (css) */
+.registerFormContainer {
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+}
+
+button {
+  border: 1px solid #000;
+}
+
+
+/*# sourceMappingURL=src_app_routes_register_register_00c0eb5e.css.map*/

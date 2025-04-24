@@ -1,0 +1,21 @@
+/* [project]/src/app/routes/item/item.css [app-client] (css) */
+.itemListContainer {
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+}
+
+.itemsConatiner {
+  border: 1px solid #000;
+  width: 50vw;
+}
+
+.itemConatiner {
+  flex-direction: row;
+  justify-content: space-between;
+  display: flex;
+}
+
+
+/*# sourceMappingURL=src_app_routes_item_item_ef9b7d5e.css.map*/
