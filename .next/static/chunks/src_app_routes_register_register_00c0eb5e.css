@@ -1,13 +1,19 @@
 /* [project]/src/app/routes/register/register.css [app-client] (css) */
 .registerFormContainer {
+  border: 1px solid #000;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  padding: 10px;
   display: flex;
 }
 
-button {
-  border: 1px solid #000;
+.requirement {
+  font-size: 12px;
+}
+
+.label {
+  font-weight: bold;
 }
 
 

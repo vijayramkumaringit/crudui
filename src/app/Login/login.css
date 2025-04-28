@@ -12,3 +12,22 @@
     justify-content: space-around;
     align-items: center;
 }
+.error-message {
+    color: red;
+    font-size: 14px;
+    margin-top: 10px;
+  }
+  .registerEl{
+    color:darkblue;
+    cursor: pointer;
+    border-bottom: 1px solid black;
+}
+button{
+    margin:10px;
+    border:1px solid black;
+    padding: 2px;
+    border-radius: 2px;
+}
+label{
+    font-weight: bold;
+}
