@@ -4,6 +4,9 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  width: 40vw;
+  height: 50vh;
+  margin: auto;
   padding: 10px;
   display: flex;
 }
@@ -36,6 +39,14 @@ button {
 
 label {
   font-weight: bold;
+}
+
+input {
+  border-bottom: 1px solid #000;
+}
+
+p {
+  margin-top: 5px;
 }
 
 

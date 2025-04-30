@@ -81,14 +81,16 @@ const Login = () => {
           onChange={(e) => setPassword(e.target.value)}
           onBlur={()=>{handleBlur('password')}}
         />
+        <p>forget password? <a  className='registerEl' onClick={() => {router.push('/routes/reset')}}>click here</a></p>
         {inputErrors.password && <p className="error-message">{inputErrors.password}</p>}
         <br />
-        <p>already registered user click login, new user <a  className='registerEl' onClick={() => {router.push('/routes/register')}}>register here</a></p>
+        <p>already registered user, click login. New user <a  className='registerEl' onClick={() => {router.push('/routes/register')}}>register here.</a></p>
         {errorMessage && <p className="error-message">{errorMessage}</p>} 
         <div className='formButtonContainer'>
           <button type='submit'>Log in</button>
-          <button type='button' onClick={()=>{router.push('/routes/register')}}>Register here</button>
+          <button type='button' onClick={()=>{router.push('/routes/register')}}>Sign up</button>
         </div>
+        
       </form>
     </div>
   )

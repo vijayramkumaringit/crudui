@@ -3,5 +3,6 @@
   "/favicon.ico/route": "app/favicon.ico/route.js",
   "/page": "app/page.js",
   "/routes/item/page": "app/routes/item/page.js",
-  "/routes/register/page": "app/routes/register/page.js"
+  "/routes/register/page": "app/routes/register/page.js",
+  "/routes/reset/page": "app/routes/reset/page.js"
 }

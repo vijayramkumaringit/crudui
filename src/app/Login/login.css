@@ -5,6 +5,9 @@
     align-items: center;
     padding: 10px;
     border: 1px solid black;
+    width: 40vw;
+    height: 50vh;
+    margin: auto;
 }
 .formButtonContainer{
     display: flex;
@@ -30,4 +33,10 @@ button{
 }
 label{
     font-weight: bold;
+}
+input{
+    border-bottom:1px solid black ;
+}
+p{
+    margin-top:5px;
 }

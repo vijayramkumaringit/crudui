@@ -5,6 +5,9 @@
     align-items: center;
     border:1px solid black;
     padding:10px;
+    margin: auto;
+    width:50vw;
+    height: 50vh;
 }
 
 .requirement{
@@ -13,4 +16,11 @@
 
  .label{
     font-weight: bold;
+ }
+
+ input{
+    border-bottom: 1px solid black;
+ }
+ p{
+    padding-top: 10px;
  }
