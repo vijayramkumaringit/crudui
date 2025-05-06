@@ -28,7 +28,7 @@ const Register = ()=>{
     const passwordRegex = /^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[@$!%*?&])[A-Za-z\d@$!%*?&]{8,20}$/;
     const addUser = async ()=>{
         try {
-            const res = await fetch('http://localhost:5000/register', {
+            const res = await fetch('http://localhost:5000/auth/register', {
                 method: 'POST',
                 headers: {
                     'Content-Type': 'application/json'
@@ -84,7 +84,7 @@ const Register = ()=>{
                 children: "New user!!! Register here"
             }, void 0, false, {
                 fileName: "[project]/src/app/routes/register/page.tsx",
-                lineNumber: 81,
+                lineNumber: 80,
                 columnNumber: 7
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("form", {
@@ -95,7 +95,7 @@ const Register = ()=>{
                         children: "Username"
                     }, void 0, false, {
                         fileName: "[project]/src/app/routes/register/page.tsx",
-                        lineNumber: 83,
+                        lineNumber: 82,
                         columnNumber: 7
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -107,7 +107,7 @@ const Register = ()=>{
                                 onChange: handleUser
                             }, void 0, false, {
                                 fileName: "[project]/src/app/routes/register/page.tsx",
-                                lineNumber: 85,
+                                lineNumber: 84,
                                 columnNumber: 11
                             }, this),
                             usernameRegex.test(usernameInput) && usernameInput.length > 2 && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
@@ -115,20 +115,20 @@ const Register = ()=>{
                                 children: "✓"
                             }, void 0, false, {
                                 fileName: "[project]/src/app/routes/register/page.tsx",
-                                lineNumber: 92,
+                                lineNumber: 91,
                                 columnNumber: 13
                             }, this)
                         ]
                     }, void 0, true, {
                         fileName: "[project]/src/app/routes/register/page.tsx",
-                        lineNumber: 84,
+                        lineNumber: 83,
                         columnNumber: 9
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("label", {
                         children: "Password"
                     }, void 0, false, {
                         fileName: "[project]/src/app/routes/register/page.tsx",
-                        lineNumber: 96,
+                        lineNumber: 95,
                         columnNumber: 9
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -140,7 +140,7 @@ const Register = ()=>{
                                 onChange: handlePassword
                             }, void 0, false, {
                                 fileName: "[project]/src/app/routes/register/page.tsx",
-                                lineNumber: 98,
+                                lineNumber: 97,
                                 columnNumber: 11
                             }, this),
                             passwordRegex.test(passwordInput) && passwordInput.length > 7 && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
@@ -148,20 +148,20 @@ const Register = ()=>{
                                 children: "✓"
                             }, void 0, false, {
                                 fileName: "[project]/src/app/routes/register/page.tsx",
-                                lineNumber: 105,
+                                lineNumber: 104,
                                 columnNumber: 13
                             }, this)
                         ]
                     }, void 0, true, {
                         fileName: "[project]/src/app/routes/register/page.tsx",
-                        lineNumber: 97,
+                        lineNumber: 96,
                         columnNumber: 9
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("label", {
                         children: "Confirm Password"
                     }, void 0, false, {
                         fileName: "[project]/src/app/routes/register/page.tsx",
-                        lineNumber: 109,
+                        lineNumber: 108,
                         columnNumber: 9
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -173,7 +173,7 @@ const Register = ()=>{
                                 onChange: handleConfirmPassword
                             }, void 0, false, {
                                 fileName: "[project]/src/app/routes/register/page.tsx",
-                                lineNumber: 111,
+                                lineNumber: 110,
                                 columnNumber: 11
                             }, this),
                             passwordInput === confirmPasswordInput && confirmPasswordInput.length > 0 && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
@@ -181,13 +181,13 @@ const Register = ()=>{
                                 children: "✓"
                             }, void 0, false, {
                                 fileName: "[project]/src/app/routes/register/page.tsx",
-                                lineNumber: 118,
+                                lineNumber: 117,
                                 columnNumber: 13
                             }, this)
                         ]
                     }, void 0, true, {
                         fileName: "[project]/src/app/routes/register/page.tsx",
-                        lineNumber: 110,
+                        lineNumber: 109,
                         columnNumber: 9
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
@@ -195,7 +195,7 @@ const Register = ()=>{
                         children: "Password must be 8-20 characters, include uppercase, lowercase, number, and special character. "
                     }, void 0, false, {
                         fileName: "[project]/src/app/routes/register/page.tsx",
-                        lineNumber: 122,
+                        lineNumber: 121,
                         columnNumber: 9
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
@@ -203,7 +203,7 @@ const Register = ()=>{
                         children: "Username must be 3-20 alphanumeric characters"
                     }, void 0, false, {
                         fileName: "[project]/src/app/routes/register/page.tsx",
-                        lineNumber: 123,
+                        lineNumber: 122,
                         columnNumber: 9
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
@@ -211,7 +211,7 @@ const Register = ()=>{
                         children: "Sign Up"
                     }, void 0, false, {
                         fileName: "[project]/src/app/routes/register/page.tsx",
-                        lineNumber: 124,
+                        lineNumber: 123,
                         columnNumber: 9
                     }, this),
                     error && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
@@ -221,19 +221,19 @@ const Register = ()=>{
                         children: error
                     }, void 0, false, {
                         fileName: "[project]/src/app/routes/register/page.tsx",
-                        lineNumber: 125,
+                        lineNumber: 124,
                         columnNumber: 19
                     }, this)
                 ]
             }, void 0, true, {
                 fileName: "[project]/src/app/routes/register/page.tsx",
-                lineNumber: 82,
+                lineNumber: 81,
                 columnNumber: 7
             }, this)
         ]
     }, void 0, true, {
         fileName: "[project]/src/app/routes/register/page.tsx",
-        lineNumber: 80,
+        lineNumber: 79,
         columnNumber: 5
     }, this);
 };

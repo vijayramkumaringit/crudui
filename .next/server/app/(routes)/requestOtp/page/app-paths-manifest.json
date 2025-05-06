@@ -1,0 +1,3 @@
+{
+  "/(routes)/requestOtp/page": "app/(routes)/requestOtp/page.js"
+}

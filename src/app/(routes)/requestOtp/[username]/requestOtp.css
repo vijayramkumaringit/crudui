@@ -1,0 +1,16 @@
+.otpValidationForm{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    margin: auto;
+    padding: 10px;
+    border:1px solid black;
+    width: 50vw;
+}
+ button{
+    border:1px solid black;
+}
+input{
+    border:1px solid black;
+}

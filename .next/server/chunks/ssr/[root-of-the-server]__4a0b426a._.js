@@ -95,21 +95,21 @@ const ResetPage = ()=>{
                     children: "Password Assistance"
                 }, void 0, false, {
                     fileName: "[project]/src/app/routes/reset/page.tsx",
-                    lineNumber: 50,
+                    lineNumber: 51,
                     columnNumber: 13
                 }, this),
                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
                     children: "Enter the email address associated with your account."
                 }, void 0, false, {
                     fileName: "[project]/src/app/routes/reset/page.tsx",
-                    lineNumber: 51,
+                    lineNumber: 52,
                     columnNumber: 13
                 }, this),
                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("label", {
                     children: "username or email "
                 }, void 0, false, {
                     fileName: "[project]/src/app/routes/reset/page.tsx",
-                    lineNumber: 52,
+                    lineNumber: 53,
                     columnNumber: 13
                 }, this),
                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("input", {
@@ -121,14 +121,14 @@ const ResetPage = ()=>{
                     }
                 }, void 0, false, {
                     fileName: "[project]/src/app/routes/reset/page.tsx",
-                    lineNumber: 53,
+                    lineNumber: 54,
                     columnNumber: 13
                 }, this),
                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("label", {
                     children: "New Password"
                 }, void 0, false, {
                     fileName: "[project]/src/app/routes/reset/page.tsx",
-                    lineNumber: 54,
+                    lineNumber: 55,
                     columnNumber: 13
                 }, this),
                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("input", {
@@ -139,7 +139,7 @@ const ResetPage = ()=>{
                     }
                 }, void 0, false, {
                     fileName: "[project]/src/app/routes/reset/page.tsx",
-                    lineNumber: 55,
+                    lineNumber: 56,
                     columnNumber: 13
                 }, this),
                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -148,12 +148,12 @@ const ResetPage = ()=>{
                         children: "continue"
                     }, void 0, false, {
                         fileName: "[project]/src/app/routes/reset/page.tsx",
-                        lineNumber: 57,
+                        lineNumber: 58,
                         columnNumber: 17
                     }, this)
                 }, void 0, false, {
                     fileName: "[project]/src/app/routes/reset/page.tsx",
-                    lineNumber: 56,
+                    lineNumber: 57,
                     columnNumber: 13
                 }, this),
                 error && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
@@ -169,24 +169,24 @@ const ResetPage = ()=>{
                             children: ". Password must be 8-20 characters, include uppercase, lowercase, number, and special character."
                         }, void 0, false, {
                             fileName: "[project]/src/app/routes/reset/page.tsx",
-                            lineNumber: 59,
+                            lineNumber: 60,
                             columnNumber: 56
                         }, this)
                     ]
                 }, void 0, true, {
                     fileName: "[project]/src/app/routes/reset/page.tsx",
-                    lineNumber: 59,
+                    lineNumber: 60,
                     columnNumber: 21
                 }, this)
             ]
         }, void 0, true, {
             fileName: "[project]/src/app/routes/reset/page.tsx",
-            lineNumber: 49,
+            lineNumber: 50,
             columnNumber: 9
         }, this)
     }, void 0, false, {
         fileName: "[project]/src/app/routes/reset/page.tsx",
-        lineNumber: 48,
+        lineNumber: 49,
         columnNumber: 5
     }, this);
 };

@@ -43,54 +43,54 @@ __turbopack_context__.s({
 var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/next/dist/server/route-modules/app-page/vendored/ssr/react-jsx-dev-runtime.js [app-ssr] (ecmascript)");
 var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$navigation$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/next/navigation.js [app-ssr] (ecmascript)");
 var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/next/dist/server/route-modules/app-page/vendored/ssr/react.js [app-ssr] (ecmascript)");
-'use client';
+"use client";
 ;
 ;
 ;
 ;
 const Login = ()=>{
     const router = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$navigation$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["useRouter"])();
-    const [username, setUsername] = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["useState"])('');
-    const [password, setPassword] = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["useState"])('');
-    const [errorMessage, setErrorMessage] = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["useState"])('');
+    const [username, setUsername] = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["useState"])("");
+    const [password, setPassword] = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["useState"])("");
+    const [errorMessage, setErrorMessage] = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["useState"])("");
     const [inputErrors, setInputErrors] = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["useState"])({
-        username: '',
-        password: ''
+        username: "",
+        password: ""
     });
     (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["useEffect"])(()=>{
-        const token = localStorage.getItem('token');
+        const token = localStorage.getItem("token");
         if (token) {
-            router.push('/routes/item');
+            router.push("/item");
         }
     }, []);
     const handleBlur = (field)=>{
-        if (field === 'username' && !username) {
+        if (field === "username" && !username) {
             setInputErrors((prev)=>({
                     ...prev,
-                    username: 'username is required'
+                    username: "username is required"
                 }));
-        } else if (field === 'password' && !password) {
+        } else if (field === "password" && !password) {
             setInputErrors((prev)=>({
                     ...prev,
-                    password: 'Password is required'
+                    password: "Password is required"
                 }));
         }
     };
     const submitLoginForm = async (e)=>{
         e.preventDefault();
         setInputErrors({
-            username: '',
-            password: ''
+            username: "",
+            password: ""
         });
         if (!username || !password) {
-            setErrorMessage('input fields cannot be empty');
+            setErrorMessage("input fields cannot be empty");
             return;
         }
         try {
-            const res = await fetch('http://localhost:5000/login', {
-                method: 'POST',
+            const res = await fetch("http://localhost:5000/auth/login", {
+                method: "POST",
                 headers: {
-                    'Content-Type': 'application/json'
+                    "Content-Type": "application/json"
                 },
                 body: JSON.stringify({
                     username,
@@ -99,14 +99,14 @@ const Login = ()=>{
             });
             if (res.ok) {
                 const data = await res.json();
-                localStorage.setItem('token', data.token);
-                router.push('/routes/item');
+                localStorage.setItem("token", data.token);
+                router.push("/item");
             } else {
                 const errorData = await res.json();
-                setErrorMessage(errorData.message || 'Invalid credentials');
+                setErrorMessage(errorData.message || "Invalid credentials");
             }
         } catch (error) {
-            setErrorMessage('Something went wrong. Please try again later.');
+            setErrorMessage("Something went wrong. Please try again later.");
         }
     };
     return /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -118,7 +118,7 @@ const Login = ()=>{
                     children: "Username"
                 }, void 0, false, {
                     fileName: "[project]/src/app/Login/page.tsx",
-                    lineNumber: 66,
+                    lineNumber: 64,
                     columnNumber: 9
                 }, this),
                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("input", {
@@ -127,11 +127,11 @@ const Login = ()=>{
                     value: username,
                     onChange: (e)=>setUsername(e.target.value),
                     onBlur: ()=>{
-                        handleBlur('username');
+                        handleBlur("username");
                     }
                 }, void 0, false, {
                     fileName: "[project]/src/app/Login/page.tsx",
-                    lineNumber: 67,
+                    lineNumber: 65,
                     columnNumber: 9
                 }, this),
                 inputErrors.username && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
@@ -139,19 +139,19 @@ const Login = ()=>{
                     children: inputErrors.username
                 }, void 0, false, {
                     fileName: "[project]/src/app/Login/page.tsx",
-                    lineNumber: 74,
-                    columnNumber: 35
+                    lineNumber: 75,
+                    columnNumber: 11
                 }, this),
                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("br", {}, void 0, false, {
                     fileName: "[project]/src/app/Login/page.tsx",
-                    lineNumber: 75,
+                    lineNumber: 77,
                     columnNumber: 9
                 }, this),
                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("label", {
                     children: "Password"
                 }, void 0, false, {
                     fileName: "[project]/src/app/Login/page.tsx",
-                    lineNumber: 76,
+                    lineNumber: 78,
                     columnNumber: 9
                 }, this),
                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("input", {
@@ -160,31 +160,32 @@ const Login = ()=>{
                     value: password,
                     onChange: (e)=>setPassword(e.target.value),
                     onBlur: ()=>{
-                        handleBlur('password');
+                        handleBlur("password");
                     }
                 }, void 0, false, {
                     fileName: "[project]/src/app/Login/page.tsx",
-                    lineNumber: 77,
+                    lineNumber: 79,
                     columnNumber: 9
                 }, this),
                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
                     children: [
-                        "forget password? ",
+                        "forget password?",
+                        " ",
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("a", {
                             className: "registerEl",
                             onClick: ()=>{
-                                router.push('/routes/reset');
+                                router.push("/recover");
                             },
                             children: "click here"
                         }, void 0, false, {
                             fileName: "[project]/src/app/Login/page.tsx",
-                            lineNumber: 84,
-                            columnNumber: 29
+                            lineNumber: 90,
+                            columnNumber: 11
                         }, this)
                     ]
                 }, void 0, true, {
                     fileName: "[project]/src/app/Login/page.tsx",
-                    lineNumber: 84,
+                    lineNumber: 88,
                     columnNumber: 9
                 }, this),
                 inputErrors.password && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
@@ -192,32 +193,33 @@ const Login = ()=>{
                     children: inputErrors.password
                 }, void 0, false, {
                     fileName: "[project]/src/app/Login/page.tsx",
-                    lineNumber: 85,
-                    columnNumber: 34
+                    lineNumber: 100,
+                    columnNumber: 11
                 }, this),
                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("br", {}, void 0, false, {
                     fileName: "[project]/src/app/Login/page.tsx",
-                    lineNumber: 86,
+                    lineNumber: 102,
                     columnNumber: 9
                 }, this),
                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
                     children: [
-                        "already registered user, click login. New user ",
+                        "already registered user, click login. New user",
+                        " ",
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("a", {
                             className: "registerEl",
                             onClick: ()=>{
-                                router.push('/routes/register');
+                                router.push("/register");
                             },
                             children: "register here."
                         }, void 0, false, {
                             fileName: "[project]/src/app/Login/page.tsx",
-                            lineNumber: 87,
-                            columnNumber: 59
+                            lineNumber: 105,
+                            columnNumber: 11
                         }, this)
                     ]
                 }, void 0, true, {
                     fileName: "[project]/src/app/Login/page.tsx",
-                    lineNumber: 87,
+                    lineNumber: 103,
                     columnNumber: 9
                 }, this),
                 errorMessage && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
@@ -225,7 +227,7 @@ const Login = ()=>{
                     children: errorMessage
                 }, void 0, false, {
                     fileName: "[project]/src/app/Login/page.tsx",
-                    lineNumber: 88,
+                    lineNumber: 114,
                     columnNumber: 26
                 }, this),
                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -236,35 +238,35 @@ const Login = ()=>{
                             children: "Log in"
                         }, void 0, false, {
                             fileName: "[project]/src/app/Login/page.tsx",
-                            lineNumber: 90,
+                            lineNumber: 116,
                             columnNumber: 11
                         }, this),
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
                             type: "button",
                             onClick: ()=>{
-                                router.push('/routes/register');
+                                router.push("/register");
                             },
                             children: "Sign up"
                         }, void 0, false, {
                             fileName: "[project]/src/app/Login/page.tsx",
-                            lineNumber: 91,
+                            lineNumber: 117,
                             columnNumber: 11
                         }, this)
                     ]
                 }, void 0, true, {
                     fileName: "[project]/src/app/Login/page.tsx",
-                    lineNumber: 89,
+                    lineNumber: 115,
                     columnNumber: 9
                 }, this)
             ]
         }, void 0, true, {
             fileName: "[project]/src/app/Login/page.tsx",
-            lineNumber: 65,
+            lineNumber: 63,
             columnNumber: 7
         }, this)
     }, void 0, false, {
         fileName: "[project]/src/app/Login/page.tsx",
-        lineNumber: 64,
+        lineNumber: 62,
         columnNumber: 5
     }, this);
 };

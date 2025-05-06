@@ -1,8 +1,7 @@
 {
+  "/(routes)/recover/page": "app/(routes)/recover/page.js",
+  "/(routes)/requestOtp/[username]/page": "app/(routes)/requestOtp/[username]/page.js",
+  "/(routes)/reset/[id]/page": "app/(routes)/reset/[id]/page.js",
   "/Login/page": "app/Login/page.js",
-  "/favicon.ico/route": "app/favicon.ico/route.js",
-  "/page": "app/page.js",
-  "/routes/item/page": "app/routes/item/page.js",
-  "/routes/register/page": "app/routes/register/page.js",
-  "/routes/reset/page": "app/routes/reset/page.js"
+  "/page": "app/page.js"
 }

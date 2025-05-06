@@ -1,0 +1,22 @@
+/* [project]/src/app/(routes)/recover/recover.css [app-client] (css) */
+.recoverPageForm {
+  border: 1px solid #000;
+  flex-direction: column;
+  justify-content: flex-start;
+  width: 50vw;
+  margin: auto;
+  padding: 10px;
+  display: flex;
+}
+
+button {
+  border: 1px solid #000;
+  margin-top: 5px;
+}
+
+input {
+  border-bottom: 1px solid #000;
+}
+
+
+/*# sourceMappingURL=src_app_%28routes%29_recover_recover_a473d5ce.css.map*/

@@ -1,0 +1,18 @@
+.resetPageForm{
+    border:1px solid black;
+    width:50vw;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+}
+button{
+    border: 1px solid black;
+    margin-top: 5px;
+    padding: 5px;
+}
+input{
+ border-bottom: 1px solid black;
+}

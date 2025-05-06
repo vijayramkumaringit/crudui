@@ -1,0 +1,31 @@
+/* [project]/src/app/(routes)/register/register.css [app-client] (css) */
+.registerFormContainer {
+  border: 1px solid #000;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 50vw;
+  height: 50vh;
+  margin: auto;
+  padding: 10px;
+  display: flex;
+}
+
+.requirement {
+  font-size: 12px;
+}
+
+.label {
+  font-weight: bold;
+}
+
+input {
+  border-bottom: 1px solid #000;
+}
+
+p {
+  padding-top: 10px;
+}
+
+
+/*# sourceMappingURL=src_app_%28routes%29_register_register_2b801cab.css.map*/

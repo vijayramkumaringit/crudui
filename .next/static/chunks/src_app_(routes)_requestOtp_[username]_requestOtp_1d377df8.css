@@ -1,0 +1,18 @@
+/* [project]/src/app/(routes)/requestOtp/[username]/requestOtp.css [app-client] (css) */
+.otpValidationForm {
+  border: 1px solid #000;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  width: 50vw;
+  margin: auto;
+  padding: 10px;
+  display: flex;
+}
+
+button, input {
+  border: 1px solid #000;
+}
+
+
+/*# sourceMappingURL=src_app_%28routes%29_requestOtp_%5Busername%5D_requestOtp_1d377df8.css.map*/
